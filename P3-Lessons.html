@@ -1,0 +1,77 @@
+<!DOCTYP HTML>
+
+<html>
+
+<head>
+</head>
+
+<body>
+	<canvas id="c" width="500" height="500"></canvas>
+	<script type="text/javascript">
+		var c = document.querySelector('#C');
+		var ctx = c.getContext('2d');
+
+	// Load an image
+
+		// var image = new Image();
+
+		// image.onload = function(){
+		// 	console.log("Loaded Image");
+		// 	ctx.drawImage(image, 0, 0, c.width, c.height);
+
+		// 	var savedImage = c.toDataURL();
+		// 	window.open(savedImage);
+		// }
+
+		// new example: drawing rectangles
+		//ctx.fillStyle = "blue"; //Deviate from default black
+		//ctx.fillRect(100, 100, 100, 100);
+		//ctx.strokeRect(50, 50, 50, 50);
+
+		// ctx.clearRect(137.5,137.5,25,25);
+
+	// Turtle for cancas
+
+		// ctx.beginPath();
+		// ctx.moveTo(10, 10);
+		// ctx.lineTo(50,50);
+		// ctx.lineTo(100,10);
+		// ctx.lineTo(10,10);
+
+		// ctx.fillStyle = "yellow";
+		// ctx.fill();
+		// ctx.stroke();
+
+			// Exercise (1)
+		// ctx.strokeRect(50,50,100,100);
+
+
+		// ctx.beginPath();
+	
+		// ctx.moveTo(75,75);
+		// ctx.lineTo(125,75);
+		// ctx.lineTo(125,125);
+		// ctx.fill();
+
+		// ctx.strokeText("Hello Udacity!", 50, 10);
+
+
+			//Excercise 2
+
+		ctx.fillStyle= "grey";
+		ctx.fillRect(0,0,500,500);
+
+
+		ctx.font = "36pt Impact";
+		ctx.textAlign ="center";
+		ctx.strokeStyle = "black";
+		ctx.fillStyle ="white";
+		ctx.lineWidth = 3;
+		ctx.strokeText("Canvas Meme!", (c.width/2), 60);
+		ctx.fillText("Canvas Meme!", (c.width/2), 60);
+
+		
+		// image.src = "lesson3.jpg";
+	</script>
+</body>
+</html>
